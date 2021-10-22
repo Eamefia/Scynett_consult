@@ -365,9 +365,11 @@
 
 
 
-.form{
+/* .form{
    padding-left: 20px;
-}
+} */
+
+
 
 
 
@@ -444,4 +446,8 @@
       display: grid;
       justify-content: center;
   }
+}
+
+.frame-form {
+    padding-inline: 200px;
 }

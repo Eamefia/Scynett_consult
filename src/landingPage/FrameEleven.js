@@ -1,6 +1,7 @@
 import React from 'react';
 import "./FrameOne.css";
 import Group from "./icons/completed.png";
+import Logo from "./Scynet-logo.png";
 function FrameEleven() {
     return (
         <div className="frame">

@@ -37,26 +37,28 @@ function FrameOne() {
          </header>
          <div className="frame__items">
             <p>What type of Project do you want to undertake?</p>
-            <form  className="pt-5 p-lg-5 form" value={projetType} onChange={(e) => projectTypeChange(e)}>
-                <div className="d-flex justify-content-center">
-                   <div className="col form-group">
+            <form id="frame1-form"  className="pt-5 p-lg-5 form" value={projetType} onChange={(e) => projectTypeChange(e)}>
+                <div className="frame-form text-center d-flex flex-wrap justify-content-center">
+                   <div className="form-group col-6">
                     <input type="radio" id="personal" name="website" value="Personal Website"/>
                     <label for="personal">Personal Website</label>
                    </div>
-                   <div className="col form-group">
+                      <div className="form-group col-6">
                       <input type="radio" id="ecommerce" name="website" value="E-commerce Website"/>
                    <label for="ecommerce">E-commece Website</label>
-                   </div>
+                      </div>
+                      
+                      <div className="form-group col-6">
+                         <input type="radio" id="company" name="website" value="Company Website" />
+                         <label for="company">Company Website</label>
+                      </div>
+                      <div className="form-group col-6">
+                         <input type="radio" id="generic" name="website" value="I do not know" />
+                         <label className="generic" for="generic">I do not know</label>
+                      </div>
                </div>
                <div className="d-flex pt-4 justify-content-center">
-                 <div className="col form-group">
-                    <input type="radio" id="company" name="website" value="Company Website"/>
-                    <label for="company">Company Website</label>
-                 </div>
-                 <div  className="col form-group">
-                    <input type="radio" id="generic" name="website" value="I do not know"/>
-                    <label className="generic" for="generic">I do not know</label>
-                 </div>
+                 
                </div>
             </form>
          </div>
